@@ -1,6 +1,6 @@
 # Курсовой проект по модулю «Автоматизация тестирования» для профессии «Инженер по тестированию»
 
-## **CI - status:** ()
+## **CI - status:** ([![Java CI with Gradle](https://github.com/BerryDream7/AqaQamidDiplom/actions/workflows/gradle.yml/badge.svg)](https://github.com/BerryDream7/AqaQamidDiplom/actions/workflows/gradle.yml))
 
 Курсовой проект представляет собой автоматизацию тестирования комплексного сервиса, взаимодействующего с СУБД и API Банка.
 
@@ -16,7 +16,7 @@
 
 2. Клонировать проект в репозиторий:
 
-`git cline https://`
+`git cline https://github.com/BerryDream7/AqaQamidDiplom`
 
 3. Открыть проект в IntelliJ IDEA
 
@@ -32,19 +32,20 @@
 
 ## **Требования/документация**
 
-https://github.com/netology-code/aqa-qamid-diplom/blob/main/README.md
+`https://github.com/netology-code/aqa-qamid-diplom/blob/main/README.md`
 
 ## **План тестирования веб-сервиса покупки тура**
 
-
+`https://github.com/BerryDream7/AqaQamidDiplom/blob/main/Plan.md`
 
 ## **Баг - репорты**
 
-
+1. `https://github.com/BerryDream7/AqaQamidDiplom/issues/1`
 
 ## **Отчёт о проведённом тестировании веб-сервиса**
 
-
+`https://github.com/BerryDream7/AqaQamidDiplom/blob/main/Report.md`
 
 ## **Отчёт о проведённой автоматизации веб - сервиса**
 
+`https://github.com/BerryDream7/AqaQamidDiplom/blob/main/Summary.md`

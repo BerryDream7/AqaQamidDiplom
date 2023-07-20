@@ -41,6 +41,9 @@
 ## **Баг - репорты**
 
 1. `https://github.com/BerryDream7/AqaQamidDiplom/issues/1`
+2. `https://github.com/BerryDream7/AqaQamidDiplom/issues/2`
+3. `https://github.com/BerryDream7/AqaQamidDiplom/issues/3`
+4. `https://github.com/BerryDream7/AqaQamidDiplom/issues/4`
 
 ## **Отчёт о проведённом тестировании веб-сервиса**
 

@@ -34,3 +34,4 @@
 
 ### **Allure Report**
 
+`https://github.com/BerryDream7/AqaQamidDiplom/blob/main/AllureReport/NewAllureReport.png`

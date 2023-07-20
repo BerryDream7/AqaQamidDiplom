@@ -8,8 +8,8 @@ import static com.codeborne.selenide.Selenide.$;
 public class ChoiceOfPaymentPage {
 
     //Кнопки
-    private SelenideElement buttonBuy = $(Selectors.withText("Купить"));
-    private SelenideElement buttonBuyCredit = $(Selectors.withText("Купить в кредит"));
+    public SelenideElement buttonBuy = $(Selectors.withText("Купить"));
+    public SelenideElement buttonBuyCredit = $(Selectors.withText("Купить в кредит"));
 
     public PaymentWithCardPage selectPaymentByCard() {
         buttonBuy.click();

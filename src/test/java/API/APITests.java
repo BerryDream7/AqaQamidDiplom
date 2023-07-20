@@ -27,7 +27,7 @@ public class APITests {
     }
 
 
-    private RequestSpecification requestSpec = new RequestSpecBuilder()
+    public RequestSpecification requestSpec = new RequestSpecBuilder()
             .setBaseUri("http://localhost")
             .setPort(8080)
             .setAccept(ContentType.JSON)

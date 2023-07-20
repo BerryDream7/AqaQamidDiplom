@@ -1,39 +1,37 @@
 package UI;
 
-import static com.codeborne.selenide.Selenide.$;
-
 import SQL.SQLMethods;
 import UI.pages.ChoiceOfPaymentPage;
 import UI.pages.PaymentWithCardPage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selectors;
-
-import static com.codeborne.selenide.Selenide.open;
-
 import com.codeborne.selenide.SelenideElement;
-import io.qameta.allure.selenide.AllureSelenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.time.Duration;
 
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class UIPaymentWithCardTests {
+
     // Месяц
-    private SelenideElement errorOfCardValidity = $(Selectors.withText("Неверно указан срок действия карты"));
+    public SelenideElement errorOfCardValidity = $(Selectors.withText("Неверно указан срок действия карты"));
     //Год
-    private SelenideElement ValidityError = $(Selectors.withText("Истёк срок действия карты"));
+    public SelenideElement ValidityError = $(Selectors.withText("Истёк срок действия карты"));
     //Владелец
-    private SelenideElement obligatoryOwnerField = $(Selectors.withText("Поле обязательно для заполнения"));
-    private SelenideElement onlyLatinLetters = $(Selectors.withText("Допустимо использовать только латинские буквы"));
+    public SelenideElement obligatoryOwnerField = $(Selectors.withText("Поле обязательно для заполнения"));
+    public SelenideElement onlyLatinLetters = $(Selectors.withText("Допустимо использовать только латинские буквы"));
     //Неверный формат
-    private SelenideElement notValidFormat = $(Selectors.withText("Неверный формат"));
+    public SelenideElement notValidFormat = $(Selectors.withText("Неверный формат"));
     //Сообщения банка
-    private SelenideElement successMessage = $(Selectors.withText("Успешно"));
-    private SelenideElement approveMessage = $(Selectors.withText("Операция одобрена Банком."));
-    private SelenideElement bankError = $(Selectors.withText("Ошибка"));
-    private SelenideElement bankRejected = $(Selectors.withText("Ошибка! Банк отказал в проведении операции."));
+    public SelenideElement successMessage = $(Selectors.withText("Успешно"));
+    public SelenideElement approveMessage = $(Selectors.withText("Операция одобрена Банком."));
+    public SelenideElement bankError = $(Selectors.withText("Ошибка"));
+    public SelenideElement bankRejected = $(Selectors.withText("Ошибка! Банк отказал в проведении операции."));
 
     @BeforeAll
     static void setUpAll() {

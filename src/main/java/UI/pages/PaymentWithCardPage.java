@@ -8,22 +8,22 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 
 public class PaymentWithCardPage {
-    //Заголовок
+
     private SelenideElement headPaymentWithCard = $(Selectors.withText("Оплата по карте"));
     //Кнопки
     private SelenideElement buttonContinue = $(Selectors.withText("Продолжить"));
     //Номер карты
     private SelenideElement cardNumber = $("[placeholder=\"0000 0000 0000 0000\"]");
     //Месяц
-    private SelenideElement month = $("[placeholder=\"09\"]");
+    private SelenideElement month = $("[placeholder=\"08\"]");
     //Год
-    private SelenideElement year = $("[placeholder=\"23\"]");
+    private SelenideElement year = $("[placeholder=\"22\"]");
     //Владелец
     private SelenideElement owner = $("div:nth-child(3) span:nth-child(1) span.input__box input");
     //CVC
     private SelenideElement cvcCvv = $("[placeholder=\"999\"]");
 
-    public PaymentWithCardPage() {
+    public void PaymentWithCardPage() {
         headPaymentWithCard.shouldBe(Condition.visible);
     }
 

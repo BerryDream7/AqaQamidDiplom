@@ -13,12 +13,12 @@ public class DataGenerator {
         String[] monthes = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
         Random index = new Random();
         int indexInt = index.nextInt(monthes.length);
-        String randomMonth = monthes[indexInt];
-        return randomMonth;
+        String RandomMonth = monthes[indexInt];
+        return RandomMonth;
     }
 
     public static String generateValidYear() {
-        String[] years = {"23", "24", "25", "26", "27"};
+        String[] years = {"24", "25", "26", "27", "28"};
         Random index = new Random();
         int indexInt = index.nextInt(years.length);
         String randomYear = years[indexInt];
@@ -39,7 +39,7 @@ public class DataGenerator {
     }
 
     public static String generateFullNameInEng() {
-        Faker faker = new Faker();
+        Faker faker = new Faker(new Locale("en"));
         String fullName = faker.name().fullName();
         return fullName;
     }
@@ -65,7 +65,7 @@ public class DataGenerator {
     }
 
     public static String generatePastYear() {
-        String[] years = {"17", "18", "19", "20", "21"};
+        String[] years = {"18", "19", "20", "21", "22"};
         Random index = new Random();
         int indexInt = index.nextInt(years.length);
         String randomPastYear = years[indexInt];
